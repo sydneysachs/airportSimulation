@@ -7,4 +7,4 @@ The class Request is where planes make runway requests and join a waiting queue 
 At each time step, or at every five minute interval in the simulation, the methods takeoffQueueGenerator and arrivalQueueGenerator are called.  
 When each of these methods is called, a random number from 0-3 is generated to determine the number of new planes to spawn into a landing or takeoff queue at that time step in the simulation.
 
-This program manages the lengths of idle time the passengers spend waiting, and also gives priority to planes that request a landing in situations where there is the same number of planes in the takeoff and landing queues and the simulation has to decide which subsequent takeoff or landing to put on the runway.
+This program manages the time passengers spend waiting, and gives planes requesting a landing priority in situations where the same number of planes are waiting in the takeoff queue as the landing queue. This program determines and manages the time and runway location for each departing and arriving flight at the airport.
